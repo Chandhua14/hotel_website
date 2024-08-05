@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+body {
+    background-color: #FFFFFF; 
+    color: #2F4F4F; 
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+/* Navbar */
+nav {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #007BFF; 
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav__links a {
+    font-weight: 500;
+    color: #2F4F4F;
+    transition: 0.3s;
+}
+
+.nav__links a:hover {
+    color: #007BFF;
+}
+
+
+.header__image__container {
+    position: relative;
+    min-height: 50px;
+    background: linear-gradient(to right, rgba(44, 56, 85, 0.9), rgba(100, 125, 187, 0.1)), url("assets/header.jpg") center/cover no-repeat;
+    border-radius: 2rem;
+}
+
+.header__content {
+    max-width: 500px;
+    padding: 5rem;
+}
+
+.header__content h1 {
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.header__content p {
+    color: #F5F5F5;
+}
+
+/* Popular Hotels Section */
+.popular__container {
+    background-color: #F5F5F5; 
+}
+
+.popular__grid {
+    width: 1800px;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.popular__card {
+    background-color: #bebebe; 
+    overflow: hidden;
+    border-radius: 18px;
+  
+}
+
+.popular__content {
+    padding: 10px;
+}
+
+.popular__card__header {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.popular__card__header h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2F4F4F;
+}
+
+.popular__content p {
+    color: #696969;
+}
+
+/* Button Styling */
+.book-button {
+    background-color: #FFA07A; 
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.book-button:hover {
+    background-color: #FF8C00; 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Book Button Container */
+.book-btn-container {
+    display: center;
+    justify-content: end; 
+    align-items: end; 
+    height: 100%; 
+}
+
+/* Reward Container */
+.reward__container {
+    padding: 2rem;
+    text-align: center;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+.reward__container p {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #696969;
+}
+
+.reward__container h4 {
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #2F4F4F;
+}
+
+.reward__btn {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    color: #FFFFFF;
+    background-color: #007BFF;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reward__btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+.footer {
+    background-color: #2F4F4F; 
+    color: #FFFFFF; 
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    gap: 5rem;
+}
+
+.footer__col h3, .footer__col h4 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #FFD700; 
+}
+
+.footer__col p {
+    margin-bottom: 1rem;
+    color: #F5F5F5;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer__col p:hover {
+    color: #FFFFFF;
+}
+
+.footer__bar {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #F5F5F5;
+    text-align: right;
+    overflow: hidden;
+}
+
+.footer__bar::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 28rem;
+    transform: translateY(-50%);
+    width: 20rem;
+    height: 2px;
+    background-color: #F5F5F5;
+}
+
